@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font: normal 12px 'Dotum'
+    font: normal 12px 'Dotum';
 }
 
 a {
@@ -9,7 +9,8 @@ a {
 }
 
 img {
-    border: 0
+    border: 0;
+    vertical-align: top
 }
 
 ul {
@@ -19,8 +20,11 @@ ul {
 .inner {
     width: 980px;
     margin: 0 auto;
-    position:relative
+
+
+
 }
+.space {clear:both}
 #wrap {width:100%; overflow: hidden}
 
 /*헤더*/
@@ -46,6 +50,8 @@ header {
     right: 0;
     line-height: 75px;
 }
+.login_menu span {border-right: 1px solid #555; padding-right: 5px}
+.login_menu span:nth-child(3) {border-right: 0}
 
 /*사이드*/
 
@@ -76,6 +82,8 @@ inner {
     color: #48c5ff
 }
 
+#detail_list li:hover {color:red}
+#detail_list .header:hover {color:blue}
 #top_gnb > div.menu {
     float: left;
     width: 140px;
@@ -336,27 +344,29 @@ inner {
 
 /*본문*/
 
-#content {}
-
+/*메인배너 */
 #product_image {
-    width: 100%;
-    height: 450px;
-    background-image: url("../Images/prodRotate1.jpg");
     position:relative;
-    background-repeat: no-repeat;
-    background-position: center center
+
+    left:50%;
+    margin-left: -960px;
 
 }
-.prod_tab{position:absolute; top:35px; right:350px; }
+/*탭*/
+.prod_tab{position:absolute; top:520px; left:50%;
+margin-left: 240px}
 .prod_tab_item {position:relative}
 .prod_tab_item > .mask:hover {border: 2px solid #4285f4; display: block;}
 .prod_tab_item>.mask {position: absolute;
 top:0; right:0; bottom:0; left:0}
 .prod_tab_image {vertical-align: top}
+
+
+/*구매하기 */
 #product_article {
     float: left;
     border: 1px solid #d6d6d6;
-    width: 100%;
+    width: 980px;
     padding: 14px;
     box-sizing: border-box;
 }
@@ -390,8 +400,12 @@ top:0; right:0; bottom:0; left:0}
     position:absolute
 }
 
-#global_aside {position: absolute; right:-100px}
+
+
+/*aside*/
+#global_aside {position: absolute; right:150px}
 /*푸터*/
+b {font-weight: bold}
 #main_footer {text-align: center; margin-top: 30px; color:#555}
 .footer_1 {
     width: 100%;
@@ -401,10 +415,26 @@ top:0; right:0; bottom:0; left:0}
     text-align: center;
     margin: 0 auto;
     font-size: 12px;
+    border-bottom: 1px solid #ddd;
 }
 .footer_1>a {color:#555; padding-left: 10px}
 
 .footer_1>a {border-right: 1px solid #555; padding-right: 10px}
+.footer_2 div {float: left;}
+.footer_2 { padding-top: 20px; height: 100px}
+.footer2_1 {text-align: left; padding-left: 30px;}
+.footer2_2 {text-align: left; padding-left: 30px}
+.number {font-size: 30px; font-weight: bold}
+.center>li {float: left; margin-bottom: 20px}
+.center>li:nth-child(1) {border-right: 1px solid #555 ; padding-right: 5px }
+.center>li:nth-child(2){padding-left: 5px}
+.footer2_3 {text-align: left; padding-left: 30px;}
 
-.footer_2_logo {float:left;}
-.footer_4 {width:100%; height: 100px; background-color: #000; color:#fff; text-align: left; }
+
+.footer_3{background-image: url(../Images/footer_asset.png);
+    background-position: -44px -92px;
+    width: 968px;
+    height: 80px;
+    margin: 0 auto;top:100px; }
+.footer_4 {height: 100px; background-color: black; color:gray;font-size: 10px; line-height: 100px;}
+.footer_4 p {text-align: left; padding-top: 20px;}
