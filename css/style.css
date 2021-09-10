@@ -25,7 +25,7 @@ ul {
 
 }
 .space {clear:both}
-#wrap {width:100%; overflow: hidden}
+#wrap {width:100%; overflow: hidden ;min-width:1020px}
 
 /*헤더*/
 header {
@@ -82,7 +82,7 @@ inner {
     color: #48c5ff
 }
 
-#detail_list li:hover {color:red}
+#detail_list li:hover {color:red; cursor: pointer}
 #detail_list .header:hover {color:blue}
 #top_gnb > div.menu {
     float: left;
@@ -345,6 +345,8 @@ inner {
 /*본문*/
 
 /*메인배너 */
+#content {position:relative
+}
 #product_image {
     position:relative;
 
@@ -353,7 +355,7 @@ inner {
 
 }
 /*탭*/
-.prod_tab{position:absolute; top:520px; left:50%;
+.prod_tab{position:absolute; top:-420px; left:50%;
 margin-left: 240px}
 .prod_tab_item {position:relative}
 .prod_tab_item > .mask:hover {border: 2px solid #4285f4; display: block;}
