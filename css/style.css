@@ -25,7 +25,7 @@ ul {
 
 }
 .space {clear:both}
-#wrap {width:100%; overflow: hidden ;min-width:1020px}
+#wrap {width:100%; overflow: hidden ;min-width:1020px; overflow: hidden}
 
 /*헤더*/
 header {
@@ -55,15 +55,13 @@ header {
 
 /*사이드*/
 
-inner {
-    position: relative
-}
 
+#aside_box {position: relative}
 #global_aside {
     position: absolute;
-    right:360px;
-    top: 950px;
-    width: 90px;
+   left:50%;
+    top:935px;
+    margin-left: 500px;
 }
 
 #global_aside > a {
@@ -404,8 +402,6 @@ top:0; right:0; bottom:0; left:0}
 
 
 
-/*aside*/
-#global_aside {position: absolute; right:150px}
 /*푸터*/
 b {font-weight: bold}
 #main_footer {text-align: center; margin-top: 30px; color:#555}
@@ -418,6 +414,7 @@ b {font-weight: bold}
     margin: 0 auto;
     font-size: 12px;
     border-bottom: 1px solid #ddd;
+    min-width:1020px
 }
 .footer_1>a {color:#555; padding-left: 10px}
 
